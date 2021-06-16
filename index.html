@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-12 offset-xs-0 col-sm-12 offset-sm-0 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <form method="POST" name="formSaisie" id="form">
+                <h1>FORMULAIRE</h1>
+                
+                    <div class="fields">
+                    <label >Nom:</label>
+                    <input type="text" name="nom" class="form-control" id="nom" required=""  />
+                </div>
+                <div class="address">
+                    <label for="pseudo">Adresse:</label>
+                    <input type="text" name="adresse" id="adresse" required="" class="form-control" />
+                </div>
+                <div class="mail">
+                    <label for="email">E-mail:</label>
+                    <input type="email" name="mail" id="mail" required="" class="form-control" />
+                </div>
+                <div class="password">
+                    <label for="pass" >Mot de passe:</label><br>
+                    <input type="password" name="pass" id="pass" required="" class="form-control"/>
+                </div>
+                <div class="tel">
+                    <label for="number"  >Telephone:</label><br>
+                    <input type="number" name="telephone" id="telephone" required="" class="form-control" />  
+                </div>
+                <br>
+                <div class="check">
+                    <label for="langage">CHOISIR VOTRE COURS</label>
+                    <select name="langage" id="langage">
+                        <option value="PHP">PHP</option>
+                    </select>
+                </div>
+                <br>
+                <div class="comentaire">
+                    <label for="textarea">Commentaire:</label>
+                <textarea name="commenter" rows="4" cols="30iu" id="commenter" required=""></textarea>
+               </div>
+               <br>
+                <div class="envoi">
+                <input type="submit" id="button" class="btn btn-primary" value="Send Email" >
+                <input type="reset" class="btn btn-primary" value="Reset"/>
+            </div>
+            
+             </form>
+          </div>
+      </div>
+</div>
+<script src="form.js"></script>
+ <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('user_qCWpwFBLYVsStxlj2cEAC')
+</script>
+</body>
+</html>
